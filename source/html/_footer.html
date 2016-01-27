@@ -1,0 +1,28 @@
+<!-- build:js js/vendor.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/Swiper/dist/js/swiper.js"></script>
+<script src="bower_components/retina.js/dist/retina.js"></script>
+<!-- endbuild -->
+
+<script src="bundle.js"></script>
+<script>
+  new Swiper('.l-Quotes', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  })
+
+  var phoneSlider = new Swiper('.PhoneSlider .swiper-container', { simulateTouch: false });
+
+  $('.Feature').on('click', function() {
+    $(this)
+      .addClass('Feature--Active')
+      .siblings()
+      .removeClass('Feature--Active');
+
+    var targetIndex = $(this).data('target');
+
+    phoneSlider.slideTo(targetIndex);
+  });
+</script>
+</body>
+</html>

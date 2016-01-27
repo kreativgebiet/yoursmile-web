@@ -1,0 +1,68 @@
+.Smiles {
+  position: relative;
+  height: 240px;
+  @extend %container;
+
+  &-Single {
+    position: absolute;
+    bottom: -60px;
+    z-index: 5;
+    opacity: 0;
+
+    &--One {
+      left: 0;
+      animation-delay: 100ms !important;
+    }
+
+    &--Two {
+      left: 180px;
+      z-index: 1;
+      animation-delay: 300ms !important;
+    }
+
+    &--Three {
+      left: 330px;
+      animation-delay: 100ms !important;
+
+      @extend %hidden-md-down;
+    }
+
+    &--Four {
+      left: 460px;
+      animation-delay: 200ms !important;
+
+      @include media-breakpoint-down(md) {
+        left: 330px;
+      }
+    }
+
+    &--Five {
+      left: 600px;
+      z-index: 1;
+
+      @extend %hidden-md-down;
+    }
+
+    &--Six {
+      animation-delay: 200ms !important;
+      left: 770px;
+
+      @extend %hidden-md-down;
+    }
+
+    &--Seven {
+      right: 0;
+
+      @extend %hidden-sm-down;
+    }
+  }
+
+  &.in-view &-Single {
+    animation: fadeInTop 600ms ease-in-out both;
+  }
+}
+
+@keyframes fadeInTop {
+  from { transform: scale(1.2); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

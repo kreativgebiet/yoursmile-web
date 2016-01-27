@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-caret</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="YSCTW-Desktop-1a" sketch:type="MSArtboardGroup" transform="translate(-1141.000000, -83.000000)" fill="#FFFFFF">
+            <g id="Anmelden-+-Rectangle-49" sketch:type="MSLayerGroup" transform="translate(1055.000000, 78.000000)">
+                <path d="M91.155708,9.25615669 C90.535348,10.1637473 89.5217346,10.1523198 88.9091856,9.25615669 L87.1232612,6.64333824 C86.5029012,5.73574759 86.893899,5 87.9935697,5 L92.0713239,5 C93.172342,5 93.5541814,5.74717511 92.9416323,6.64333824 L91.155708,9.25615669 Z" id="icn-caret" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

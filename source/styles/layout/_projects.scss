@@ -1,0 +1,12 @@
+.l-Projects {
+  background: #f7f7f7;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+
+  .row {
+    align-items: center;
+  }
+
+  @include media-breakpoint-down(sm) { padding-bottom: 80px; }
+}

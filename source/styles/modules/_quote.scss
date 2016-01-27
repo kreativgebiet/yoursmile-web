@@ -1,0 +1,57 @@
+.Quote {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    height: auto;
+    padding: 30px 70px 30px 40px;
+  }
+
+  > div {
+    text-align: left;
+  }
+
+  &-Content {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 24px;
+    line-height: 1.5em;
+    background: url(../images/icn-quote.svg) no-repeat top left;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+
+  &-Author {
+    margin-top: 60px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+
+    &-Image {
+      flex: 0 0 40px;
+      margin-right: 10px;
+
+      img { border-radius: 50%; display: block; }
+    }
+
+    &-Details {
+      b, p {
+        font-weight: normal;
+        margin: 0;
+      }
+
+      b {
+        color: $color-secondary;
+        font-size: 14px;
+      }
+      p {
+        color: $color-paragraph;
+        font-size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+%container {
+  @include make-container;
+
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+.pull-right {
+  float: right;
+}
+
+@each $bp in map-keys($grid-breakpoints) {
+  %hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important;
+    }
+  }
+
+  %hidden-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      display: none !important;
+    }
+  }
+
+  .order-#{$bp}-up-first {
+    @include media-breakpoint-up($bp) {
+      order: 1;
+    }
+  }
+
+  .order-#{$bp}-down-first {
+    @include media-breakpoint-down($bp) {
+      order: 1;
+    }
+  }
+
+  .order-#{$bp}-up-last {
+    @include media-breakpoint-up($bp) {
+      order: 99;
+    }
+  }
+
+  .order-#{$bp}-down-last {
+    @include media-breakpoint-down($bp) {
+      order: 99;
+    }
+  }
+}
+
+.align-right {
+  text-align: right;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}

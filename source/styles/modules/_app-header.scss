@@ -1,0 +1,32 @@
+.AppHeader {
+  background: $color-secondary;
+  display: flex;
+  height: 50px;
+  padding: 0 15px;
+  align-items: center;
+
+  img { max-height: 30px; display: block; }
+
+  &-Logo {
+    flex: 1 1 auto;
+  }
+
+  &-User {
+    flex: 0 0 auto;
+    padding-left: 20px;
+    border-left: 1px solid rgba(#fff, .1);
+    display: flex;
+    line-height: 50px;
+    align-items: center;
+    font-size: 13px;
+    color: white;
+
+    &-Avatar {
+      margin-left: 15px;
+      width: 30px;
+      height: 30px;
+
+      img { border-radius: 50%; }
+    }
+  }
+}

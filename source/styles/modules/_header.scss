@@ -1,0 +1,29 @@
+.Header {
+  color: white;
+  font-size: 13px;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom, rgba(#000, .7), rgba(#000, .000001));
+
+  @include media-breakpoint-down(lg) {
+    padding: 20px 0;
+  }
+
+  &-Login {
+    float: right;
+    padding: 10px 0;
+    line-height: 20px;
+
+    svg {
+      vertical-align: middle;
+      width: 6px;
+      height: 6px;
+      fill: currentColor;
+    }
+  }
+}

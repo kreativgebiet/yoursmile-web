@@ -1,0 +1,15 @@
+.Footer {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 14px;
+
+  .row { align-items: center; }
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 20px;
+
+    * { text-align: center; }
+    .row > div:not(:last-child) { margin-bottom: 20px; }
+  }
+}

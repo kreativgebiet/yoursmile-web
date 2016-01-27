@@ -1,0 +1,23 @@
+$phone-slider-width: 450px;
+$phone-slider-height: 826px;
+
+.PhoneSlider {
+  width: $phone-slider-width;
+  height: $phone-slider-height;
+  background: url(../images/iphone-render.png) no-repeat center/100%;
+  padding: 89px 61px 144px 55px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+
+  @include media-breakpoint-down(md) {
+    width: $phone-slider-width / 2;
+    height: $phone-slider-height / 2;
+    padding: 46px 31px 72px 28px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin: 0 auto;
+    margin-top: -200px;
+  }
+}
