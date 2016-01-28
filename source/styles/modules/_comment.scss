@@ -1,0 +1,25 @@
+.Comment {
+  display: flex;
+  padding: 20px 0;
+
+  b {
+    line-height: 24px;
+    color: $color-secondary;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &-Image {
+    flex: 0 0 50px;
+    margin-right: 20px;
+
+    img { border-radius: 50%; }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+}

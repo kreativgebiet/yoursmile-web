@@ -1,19 +1,19 @@
 .AppHeader {
   background: $color-secondary;
-  display: flex;
-  height: 50px;
   padding: 0 15px;
-  align-items: center;
   margin-bottom: 20px;
 
+  .row { height: 50px; align-items: center; }
   img { max-height: 30px; display: block; }
 
   &-Logo {
     flex: 1 1 auto;
+    padding: 0 $grid-gutter-width / 2;
   }
 
   &-User {
     flex: 0 0 auto;
+    padding: 0 $grid-gutter-width / 2;
     padding-left: 20px;
     border-left: 1px solid rgba(#fff, .1);
     display: flex;
