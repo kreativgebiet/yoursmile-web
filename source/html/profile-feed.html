@@ -15,7 +15,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-xl-3 col-lg-4 col-md-12 col-xs-12">
           <div class="ListGroup">
             <a href="#" class="ListGroup-Item ListGroup-Item--Active">
               <svg><use xlink:href="#icn-list"></use></svg> Smiles
@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-xl-9 col-lg-8 col-md-12 col-xs-12">
           <div class="Smile">
             <div class="Smile-Image" style="background-image: url(http://lorempixel.com/1000/600/people/9);">
               <div class="Smile-Overlay">
@@ -73,10 +73,10 @@
             </div>
             <footer class="Smile-Footer">
               <div class="Smile-Footer-Col">
-                <a href="#"><svg><use xlink:href="#icn-comment"></use></svg> 9 Kommentare</a>
+                <a href="#" data-toggle="modal" data-target="#commentModal"><svg><use xlink:href="#icn-comment"></use></svg> 9 Kommentare</a>
               </div>
               <div class="Smile-Footer-Col">
-                <a href="#" class="Button Button--Grey">Kommentar schreiben</a>
+                <a href="#" data-toggle="modal" data-target="#commentModal" class="Button Button--Grey">Kommentar schreiben</a>
               </div>
             </footer>
           </div>
@@ -124,5 +124,60 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="commentModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-image: url(http://lorempixel.com/1000/600/people/9)">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">23 Kommentare</h4>
+        </div>
+        <div class="modal-body">
+          <div class="Comment">
+            <div class="Comment-Image">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+            </div>
+            <div class="Comment-Content">
+              <b>Charles Black</b>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</p>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comment-Image">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+            </div>
+            <div class="Comment-Content">
+              <b>Charles Black</b>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</p>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comment-Image">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+            </div>
+            <div class="Comment-Content">
+              <b>Charles Black</b>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</p>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comment-Image">
+              <img src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+            </div>
+            <div class="Comment-Content">
+              <b>Charles Black</b>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-input"><input type="text" class="Input"></div>
+          <div class="modal-submit"><button type="button" class="Button Button--Block Button--Primary">Senden</button></div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 @@include('./_footer.html')

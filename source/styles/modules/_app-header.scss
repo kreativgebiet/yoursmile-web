@@ -9,6 +9,10 @@
   &-Logo {
     flex: 1 1 auto;
     padding: 0 $grid-gutter-width / 2;
+
+    @include media-breakpoint-down(sm) {
+      img { margin: 0 auto; }
+    }
   }
 
   &-User {
@@ -21,6 +25,10 @@
     align-items: center;
     font-size: 13px;
     color: white;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
 
     &-Avatar {
       margin-left: 15px;
