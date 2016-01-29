@@ -32,6 +32,7 @@
     "gulp-cheerio": "^0.6.2",
     "gulp-csso": "^1.0.0",
     "gulp-file-include": "^0.13.7",
+    "gulp-filter": "^3.0.1",
     "gulp-imagemin": "^2.3.0",
     "gulp-inject": "^3.0.0",
     "gulp-plumber": "^1.0.1",

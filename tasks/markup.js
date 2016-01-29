@@ -10,6 +10,7 @@ import usemin from 'gulp-usemin';
 import rev from 'gulp-rev';
 import csso from 'gulp-csso';
 import uglify from 'gulp-uglify';
+import filter from 'gulp-filter';
 
 import { join } from 'path';
 
@@ -48,7 +49,6 @@ gulp.task('markup', ['sprites'], () => {
     .pipe(fileinclude({
       basepath: join(__dirname, '..', src, 'html'),
     }))
-    .pipe(revReplace({ manifest }))
     .pipe(gulp.dest(dest))
     .pipe(browserSync.stream());
 });
@@ -72,12 +72,6 @@ gulp.task('markup:build', ['sprites'], () => {
       basepath: join(__dirname, '..', src, 'html'),
     }))
     .pipe(revReplace({ manifest }))
-    .pipe(usemin({
-      css: [plumber(), csso(), rev()],
-      inlinecss: [plumber(), csso()],
-      js: [plumber(), uglify(), rev()],
-      inlinejs: [uglify()],
-    }))
     .pipe(gulp.dest(dest))
     .pipe(browserSync.stream());
 });

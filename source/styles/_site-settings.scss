@@ -7,3 +7,23 @@ $enable-flex: true; // Remove for legacy support
 $color-primary: #fca84e;
 $color-secondary: #363636;
 $color-paragraph: #666666;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 34rem,
+  // Medium screen / tablet
+  md: 48rem,
+  // Large screen / desktop
+  lg: 62rem,
+  // Extra large screen / wide desktop
+  xl: 85rem
+) !default;
+
+$container-max-widths: (
+  sm: 34rem,    // 480
+  md: 45rem,    // 720
+  lg: 60rem,    // 960
+  xl: 67rem,
+);

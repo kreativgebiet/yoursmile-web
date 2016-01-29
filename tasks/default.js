@@ -3,9 +3,15 @@ import { src } from './config';
 import { join } from 'path';
 import sequence from 'run-sequence';
 
-gulp.task('default', ['clean'], () => {
+gulp.task('bower:copy', () => {
+  gulp.src('./src/bower_components')
+    .pipe(gulp.dest('./dest/bower_components'));
+});
+
+gulp.task('default', () => {
   sequence(
     'clean',
+    'bower:copy',
     ['scripts', 'fonts', 'images', 'markup', 'styles'],
     'server'
   );

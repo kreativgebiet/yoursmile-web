@@ -28,4 +28,11 @@
   &--Block {
     width: 100%;
   }
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px !important;
+    min-width: auto;
+    width: 100%;
+    font-size: 12px;
+  }
 }

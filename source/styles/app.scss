@@ -57,8 +57,11 @@
 @import "modules/campaign-teaser";
 @import "modules/campaign-content";
 @import "modules/comment";
+@import "modules/sidebar";
 
 html, body { background: #f7f7f7; }
+
+.App { padding-top: 70px; }
 
 .modal {
   border-radius: 3px;
