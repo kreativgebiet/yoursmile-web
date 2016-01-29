@@ -29,7 +29,10 @@ gulp.task('styles', () => {
 gulp.task('styles:build', () => {
   const manifest = gulp.src(join(dest, '..', 'rev-manifest.json'));
 
-  gulp.src(join(src, 'styles', 'main.scss'))
+  gulp.src([
+    join(src, 'styles', 'main.scss'),
+    join(src, 'styles', 'app.scss'),
+  ])
     .pipe(plumber())
     .pipe(sass({
       includePaths: stylePaths(['scss', 'sass']),
