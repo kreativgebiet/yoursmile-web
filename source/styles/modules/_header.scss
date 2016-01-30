@@ -8,7 +8,7 @@
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
-  background: linear-gradient(to bottom, rgba(#000, .7), rgba(#000, .000001));
+  background: linear-gradient(to bottom, rgba(#000, .7), rgba(#000, .0001));
 
   @include media-breakpoint-down(lg) {
     padding: 20px 0;

@@ -1,5 +1,11 @@
 const $animationElements = $('.Smiles');
 const $window = $(window);
+const $sidebar = $('.Sidebar');
+
+let sidebarOffset;
+if ($sidebar.length) {
+  sidebarOffset = $sidebar.offset().top - 70;
+}
 
 function checkIfInView() {
   const windowHeight = $window.height();
@@ -15,13 +21,25 @@ function checkIfInView() {
     // check to see if this current container is within viewport
     if ((elementBottomPosition >= windowTopPosition) &&
         (elementTopPosition <= windowBottomPosition)) {
-      setTimeout(function timeout() {
+      setTimeout(() => {
         $element.addClass('in-view');
-      }, 500);
+      }, 200);
     } else {
       $element.removeClass('in-view');
     }
   });
 }
 
+function checkSidebarInViewport() {
+  if ($window.scrollTop() >= sidebarOffset) {
+    $sidebar.addClass('Sidebar--Fixed');
+  } else {
+    $sidebar.removeClass('Sidebar--Fixed');
+  }
+}
+
 $window.on('scroll resize', checkIfInView);
+
+if ($sidebar.length) {
+  $window.on('scroll', checkSidebarInViewport);
+}

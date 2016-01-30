@@ -1,3 +1,22 @@
 .Sidebar {
-  // position: fixed;
+
+  @include media-breakpoint-only(xl) {
+    width: 16.66666665%;
+    position: absolute;
+
+    &--Fixed {
+      position: fixed;
+      top: 70px;
+    }
+  }
+
+  @include media-breakpoint-only(lg) {
+    width: 25%;
+    position: absolute;
+
+    &--Fixed {
+      position: fixed;
+      top: 70px;
+    }
+  }
 }

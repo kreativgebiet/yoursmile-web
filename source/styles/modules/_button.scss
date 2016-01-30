@@ -2,7 +2,7 @@
   display: inline-block;
   line-height: 24px;
   padding: 10px 30px;
-  min-width: 200px;
+  // min-width: 200px;
   text-decoration: none;
   border: 0;
   color: currentColor;
@@ -10,6 +10,7 @@
   border-radius: 3px;
   -webkit-appearance: none;
   outline: none;
+  transition: all 200ms linear;
 
   &--Primary {
     background: $color-primary;
@@ -23,6 +24,10 @@
   &--Grey {
     background: #ededed;
     color: $color-secondary;
+
+    &:hover {
+      background: darken(#ededed, 5);
+    }
   }
 
   &--Block {
