@@ -35,7 +35,7 @@
   }
 
   &-Content {
-    padding: 10px;
+    padding: 20px;
 
     p { margin-bottom: 5px; }
   }
@@ -43,7 +43,7 @@
   &-Footer {
     display: flex;
     align-items: center;
-    margin: -10px 15px 0;
+    margin: -10px 20px 0;
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid #eee;
@@ -56,7 +56,8 @@
         width: 20px;
         height: 20px;
         vertical-align: middle;
-        margin-right: 10px;
+        margin-right: 5px;
+        fill: #ddd;
       }
 
       a {
