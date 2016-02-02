@@ -2,5 +2,12 @@
   padding: 100px 0 50px;
   overflow: hidden;
 
-  .row { align-items: center; flex-wrap: nowrap; }
+  .row {
+    align-items: center;
+    flex-wrap: nowrap;
+
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+  }
 }
