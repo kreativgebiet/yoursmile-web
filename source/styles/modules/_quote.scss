@@ -21,7 +21,7 @@
     background: url(../images/icn-quote.svg) no-repeat top left;
 
     @include media-breakpoint-down(sm) {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -30,6 +30,10 @@
     margin-left: 30px;
     display: flex;
     align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+    }
 
     &-Image {
       flex: 0 0 40px;
