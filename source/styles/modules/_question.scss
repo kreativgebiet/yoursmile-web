@@ -1,5 +1,7 @@
 .Question {
-  margin-bottom: $grid-gutter-width;
+  margin-bottom: 3.5rem;
 
-  &-Content {}
+  &-Content {
+    line-height: 30px;
+  }
 }

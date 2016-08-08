@@ -49,6 +49,7 @@
 @import "modules/feature";
 @import "modules/footer";
 @import "modules/header";
+@import "modules/lang";
 @import "modules/masthead";
 @import "modules/phone-slider";
 @import "modules/project-list";
@@ -112,4 +113,12 @@
   font-size: 13px;
   min-width: 0;
   float: right;
+}
+
+[lang="sa"] {
+  direction: rtl;
+
+  .Feature-Icon {
+    margin-left: 20px;
+  }
 }

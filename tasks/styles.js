@@ -15,7 +15,7 @@ import browserSync from './connect';
 gulp.task('styles', () => {
   gulp.src([
     join(src, 'styles', 'main.scss'),
-    join(src, 'styles', 'app.scss')
+    join(src, 'styles', 'app.scss'),
   ])
     .pipe(plumber())
     .pipe(sass({
@@ -27,8 +27,6 @@ gulp.task('styles', () => {
 });
 
 gulp.task('styles:build', () => {
-  const manifest = gulp.src(join(dest, '..', 'rev-manifest.json'));
-
   gulp.src([
     join(src, 'styles', 'main.scss'),
     join(src, 'styles', 'app.scss'),
@@ -39,9 +37,5 @@ gulp.task('styles:build', () => {
     }))
     .pipe(postcss([autoprefixer({ browsers: ['last 2 versions'] })]))
     .pipe(csso())
-    .pipe(revReplace({ manifest }))
-    .pipe(rev())
-    .pipe(gulp.dest(join(dest, 'styles')))
-    .pipe(rev.manifest({ merge: true }))
-    .pipe(gulp.dest(join(dest, '..')));
+    .pipe(gulp.dest(join(dest, 'styles')));
 });

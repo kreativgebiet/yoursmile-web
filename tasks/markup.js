@@ -38,7 +38,6 @@ gulp.task('markup', ['sprites'], () => {
 
   const mainPath = join(src, 'html', '**/*.html');
   const includesPath = join('!.', src, 'html', '_partials', '**/*.html');
-  const manifest = gulp.src(join(dest, '..', 'rev-manifest.json'));
 
   gulp.src([
     mainPath,
@@ -60,7 +59,6 @@ gulp.task('markup:build', ['sprites'], () => {
 
   const mainPath = join(src, 'html', '**/*.html');
   const includesPath = join('!.', src, 'html', '_partials', '**/*.html');
-  const manifest = gulp.src(join(dest, '..', 'rev-manifest.json'));
 
   gulp.src([
     mainPath,
@@ -71,7 +69,6 @@ gulp.task('markup:build', ['sprites'], () => {
     .pipe(fileinclude({
       basepath: join(__dirname, '..', src, 'html'),
     }))
-    .pipe(revReplace({ manifest }))
     .pipe(gulp.dest(dest))
     .pipe(browserSync.stream());
 });

@@ -1,0 +1,53 @@
+$footer-search-height: 44px;
+$footer-lang-switcher-height: 44px;
+$padding: 10px;
+
+
+.LangSwitcher {
+  margin-left: #{$grid-gutter-width / 2};
+  $padding: (44px - 19px) / 2;
+  float: right;
+  cursor: pointer;
+  position: relative;
+
+  &-CurrentValue {
+    position: relative;
+    height: 44px;
+    padding: $padding 44px $padding $padding;
+
+    img {
+      max-width: 26px;
+    }
+
+    b {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      background: url(images/icn-drop.svg) no-repeat center;
+      width: $footer-lang-switcher-height;
+      height: $footer-lang-switcher-height;
+    }
+  }
+
+  &-List {
+    position: absolute;
+    bottom: -450px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 200ms linear;
+
+    &-Item {
+      padding: $padding $footer-lang-switcher-height $padding $padding;
+      height: $footer-lang-switcher-height;
+      display: block;
+    }
+  }
+
+  &--Active &-List {
+    visibility: visible;
+    opacity: 1;
+  }
+}

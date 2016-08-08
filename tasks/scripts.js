@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import gutil from 'gulp-util';
 import uglify from 'gulp-uglify';
-import rev from 'gulp-rev';
 
 import browserify from 'browserify';
 import watchify from 'watchify';
@@ -45,10 +44,7 @@ function buildBundle() {
     .pipe(source('bundle.js'))
     .pipe(buffer())
     .pipe(uglify())
-    .pipe(rev())
-    .pipe(gulp.dest(dest))
-    .pipe(rev.manifest({ merge: true }))
-    .pipe(gulp.dest(join(dest, '..')));
+    .pipe(gulp.dest(dest));
 }
 
 gulp.task('scripts', bundle);

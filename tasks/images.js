@@ -19,8 +19,6 @@ gulp.task('images:build', () => {
   return gulp.src(join(src, 'images', '**/*'))
     .pipe(plumber())
     .pipe(imagemin())
-    .pipe(rev())
     .pipe(gulp.dest(join(dest, 'images')))
-    .pipe(rev.manifest({ merge: true }))
     .pipe(gulp.dest(join(dest, '..')));
 });

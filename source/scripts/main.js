@@ -43,3 +43,17 @@ $window.on('scroll resize', checkIfInView);
 if ($sidebar.length) {
   $window.on('scroll', checkSidebarInViewport);
 }
+
+$(function langSwitcherInit() {
+  let langSwitcherActive = false;
+
+  $('.LangSwitcher-CurrentValue').on('click', function langSwitcherClick() {
+    langSwitcherActive = !langSwitcherActive;
+
+    if (langSwitcherActive) {
+      $(this).parent().addClass('LangSwitcher--Active');
+    } else {
+      $(this).parent().removeClass('LangSwitcher--Active');
+    }
+  });
+});
