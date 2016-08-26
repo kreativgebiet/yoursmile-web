@@ -3,8 +3,6 @@ import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import plumber from 'gulp-plumber';
 import csso from 'gulp-csso';
-import rev from 'gulp-rev';
-import revReplace from 'gulp-rev-replace';
 
 import autoprefixer from 'autoprefixer';
 import stylePaths from 'style-paths';
