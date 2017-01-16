@@ -31,11 +31,26 @@
   &-Details {
     flex: 1 1 auto;
 
-    p { @extend %hidden-md-down; }
+    @media (max-width: 1024px) {
+      p {
+        display: inline-block;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 300ms ease;
+        max-height: 0;
+      }
+    }
   }
 
   &--Active {
     background: #f7f7f7;
+
+    @media (max-width: 1024px) {
+      .Feature-Details p {
+        max-height: 175px;
+        opacity: 1;
+      }
+    }
   }
 
   &:not(:last-child) { margin-bottom: 20px; }
