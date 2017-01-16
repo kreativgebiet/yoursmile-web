@@ -4,8 +4,8 @@ import { join } from 'path';
 import sequence from 'run-sequence';
 
 gulp.task('bower:copy', () => {
-  gulp.src('./src/bower_components')
-     .pipe(gulp.dest('./dist/bower_components'));
+  gulp.src('./source/bower_components/*/**')
+    .pipe(gulp.dest('./dist/bower_components'));
 });
 
 gulp.task('default', () => {

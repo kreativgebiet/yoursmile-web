@@ -17,12 +17,13 @@ $padding: 10px;
 
     img {
       max-width: 26px;
+      max-width: 19px;
     }
 
     b {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 15px;
+      left: -70px;
       display: block;
       background: url(images/icn-drop.svg) no-repeat center;
       width: $footer-lang-switcher-height;
