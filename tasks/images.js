@@ -1,7 +1,6 @@
 import gulp from 'gulp';
 import changed from 'gulp-changed';
 import imagemin from 'gulp-imagemin';
-import rev from 'gulp-rev';
 import plumber from 'gulp-plumber';
 
 import { join } from 'path';
@@ -19,6 +18,5 @@ gulp.task('images:build', () => {
   return gulp.src(join(src, 'images', '**/*'))
     .pipe(plumber())
     .pipe(imagemin())
-    .pipe(gulp.dest(join(dest, 'images')))
-    .pipe(gulp.dest(join(dest, '..')));
+    .pipe(gulp.dest(join(dest, 'images')));
 });

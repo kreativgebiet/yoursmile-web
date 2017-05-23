@@ -17,6 +17,8 @@
   .container > img {
     float: left;
 
+    width: 120px;
+
     @include media-breakpoint-down(sm) {
       width: 110px;
       margin-top: 5px;
