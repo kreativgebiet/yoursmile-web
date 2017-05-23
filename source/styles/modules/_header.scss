@@ -16,6 +16,13 @@
 
   .container > img {
     float: left;
+
+    @include media-breakpoint-down(sm) {
+      width: 110px;
+      margin-top: 5px;
+      margin-left: 25px;
+      height: auto;
+    }
   }
 
   &-Login {

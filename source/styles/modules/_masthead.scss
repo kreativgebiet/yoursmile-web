@@ -31,7 +31,10 @@
     overflow: hidden;
 
     @include media-breakpoint-down(md) {
-      background: url("../images/video-bg.png") center/cover;
+      background-image: url('../images/video-bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 333%;
     }
 
     video {
