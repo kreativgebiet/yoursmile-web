@@ -1,7 +1,11 @@
 .l-CallToAction {
   background: url(../images/download-bg.jpg) no-repeat center/cover;
-  padding: 150px 25px;
+  padding: 200px 25px;
   text-align: center;
 
-  h2 { color: white; }
+  h2 {
+    font-size: 48px;
+    line-height: 58px;
+    color: white;
+  }
 }

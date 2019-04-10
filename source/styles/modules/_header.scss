@@ -16,14 +16,13 @@
 
   .container > img {
     float: left;
-
-    width: 120px;
+    width: 60px;
+    height: auto;
 
     @include media-breakpoint-down(sm) {
-      width: 110px;
+      width: 40px;
       margin-top: 5px;
       margin-left: 25px;
-      height: auto;
     }
   }
 
