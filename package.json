@@ -57,5 +57,7 @@
     "watchify": "^3.5.0",
     "yargs": "^3.29.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
