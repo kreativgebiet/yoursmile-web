@@ -19,7 +19,7 @@ gulp.task('styles', () => {
     .pipe(sass({
       includePaths: stylePaths(['scss', 'sass']),
     }))
-    .pipe(postcss([autoprefixer({ browsers: ['last 2 versions'] })]))
+    .pipe(postcss([autoprefixer({ browsers: ['last 4 versions'] })]))
     .pipe(gulp.dest(join(dest, 'styles')))
     .pipe(browserSync.stream());
 });
@@ -33,7 +33,7 @@ gulp.task('styles:build', () => {
     .pipe(sass({
       includePaths: stylePaths(['scss', 'sass']),
     }))
-    .pipe(postcss([autoprefixer({ browsers: ['last 2 versions'] })]))
+    .pipe(postcss([autoprefixer({ browsers: ['last 4 versions'] })]))
     .pipe(csso())
     .pipe(gulp.dest(join(dest, 'styles')));
 });

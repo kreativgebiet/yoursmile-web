@@ -26,14 +26,34 @@
     }
   }
 
+  &-Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 60px;
+      height: auto;
+    }
+  }
+
+  &-Nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &-Login {
-    float: right;
     padding: 10px 0;
     line-height: 20px;
 
     a {
+      display: block;
+      padding: 4px 14px;
       text-decoration: none;
-      color: #fff;
+      background-color: #FFA449;
+      color: #FFF;
+      border-radius: 4px;
     }
 
     svg {
