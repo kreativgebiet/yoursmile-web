@@ -2,6 +2,7 @@
   position: relative;
   height: 240px;
   @extend %container;
+  max-width: 1168px;
 
   @include media-breakpoint-down(sm) {
     display: none;

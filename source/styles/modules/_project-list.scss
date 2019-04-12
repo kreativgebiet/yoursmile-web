@@ -2,8 +2,7 @@
   height: 60vh;
   width: 100%;
   background: url(../images/project-list.png) no-repeat center;
-  animation: projectList 28000ms linear infinite;
-  // animation: projectList 2800ms linear infinite;
+  animation: projectList 15s linear infinite;
 
   @include media-breakpoint-down(lg) {
     height: 80vh;
@@ -34,10 +33,10 @@
 
 @keyframes projectList {
   0% {
-    background-position: 50% -480px;
+    background-position: 50% 0;
   }
 
   100% {
-    background-position: 50% -1540px;
+    background-position: 50% -1058px;
   }
 }
