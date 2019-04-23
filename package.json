@@ -8,7 +8,7 @@
     "test": "gulp test",
     "build": "gulp build",
     "start": "http-server ./dist",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "bower install && npm run build"
   },
   "keywords": [
     "boilerplate",
